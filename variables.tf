@@ -1,3 +1,6 @@
+###################################################################
+# Main Variables
+
 variable "region" {
   description = "The AWS region to deploy the resources"
   type        = string
@@ -9,6 +12,9 @@ variable "profile" {
   type        = string
   default     = "Terraform"
 }
+
+###################################################################
+# EC2 Variables
 
 variable "key_name" {
   description = "The name of the key pair to use for SSH access"
